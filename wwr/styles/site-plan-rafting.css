@@ -1,0 +1,68 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap');
+
+/* CSS Variables */
+:root {
+  --primary-color: #212227;
+  --secondary-color: #637074;
+  --accent1-color: #AAB9CF;
+  --accent2-color: #8693AB;
+
+  --heading-font: 'Montserrat', sans-serif;
+  --paragraph-font: 'Open Sans', sans-serif;
+
+  --nav-background-color: var(--primary-color);
+  --nav-link-color: #ffffff;
+  --nav-hover-link-color: var(--secondary-color);
+  --nav-hover-background-color: var(--accent1-color);
+}
+
+/* Body Style */
+body {
+  font-family: var(--paragraph-font);
+  max-width: 960px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* Headings Style */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+/* Header Style */
+header {
+  padding: 20px;
+  background-color: var(--accent1-color);
+}
+
+/* Paragraph Style */
+p {
+  padding: 10px;
+  color: var(--secondary-color);
+}
+
+/* Navigation Style */
+nav {
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  color: var(--nav
+-link-color);
+text-decoration: none;
+padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+color: var(--nav-link-color);
+}
+
+nav a:hover {
+color: var(--nav-hover-link-color);
+background-color: var(--nav-hover-background-color);
+}
