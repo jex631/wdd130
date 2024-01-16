@@ -23,6 +23,7 @@ body {
   max-width: 960px;
   padding: 20px;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
 /* Headings Style */
@@ -35,6 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 header {
   padding: 20px;
   background-color: var(--accent1-color);
+  color: var(--primary-color);
 }
 
 /* Paragraph Style */
@@ -48,12 +50,13 @@ nav {
   background-color: var(--nav-background-color);
   font-size: 1.2rem;
   display: flex;
+  justify-content: center;
 }
 
 nav a {
   display: block;
-  color: var(--nav
--link-color);
+  color: var
+(--nav-link-color);
 text-decoration: none;
 padding: 1rem;
 }
@@ -65,4 +68,50 @@ color: var(--nav-link-color);
 nav a:hover {
 color: var(--nav-hover-link-color);
 background-color: var(--nav-hover-background-color);
+}
+
+/* Footer Style */
+footer {
+padding: 20px;
+color: var(--nav-link-color);
+text-align: center;
+}
+
+/* Image Style */
+img {
+max-width: 100%;
+height: auto;
+display: block;
+margin: 0 auto;
+}
+
+/* List Style */
+ul {
+list-style-type: none;
+padding: 0;
+}
+
+ul li {
+padding: 5px 0;
+}
+
+/* Link Style */
+a {
+color: var(--accent2-color);
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+body {
+padding: 10px;
+}
+
+nav {
+flex-direction: column;
+}
 }
