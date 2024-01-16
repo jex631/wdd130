@@ -23,6 +23,7 @@ font-stretch : normal;
 font-display : swap;
 src : url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0C4n.ttf) format('truetype');
 }
+
 /* CSS Variables */
 :root {
   --primary-color: #212227;
@@ -77,10 +78,9 @@ nav {
 
 nav a {
   display: block;
-  color: var
-(--nav-link-color);
-text-decoration: none;
-padding: 1rem;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
 }
 
 nav a:link, nav a:visited {
