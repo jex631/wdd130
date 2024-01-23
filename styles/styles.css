@@ -67,8 +67,8 @@ aside {
 
 aside h2 {
   position: absolute;
-  top: 10px; /* Adjust based on your layout */
-  left: 10px; /* Adjust based on your layout */
+  top: 10px; 
+  left: 10px; 
   color: #fff; /* Change text color for readability */
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   padding: 5px; /* Add some padding around the text */
