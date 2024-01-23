@@ -1,75 +1,101 @@
 /* Reset some default styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Apply a base font size and style */
-  body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
-  /* Style the header and navigation */
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /* Style the main content */
-  main {
-    padding: 1rem;
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Style the aside section */
-  aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  aside img {
-    width: 200px;
-    height: auto;
-  }
+/* Apply a base font size and style */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
 
-  main img {
-    width: 150px;
-    height: auto;
-  }
+/* Style the header and navigation */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
 
-  p {
-    padding: 0;
-  }
+nav {
+  display: flex;
+  justify-content: space-around;
+}
 
-  footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
-  }
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Style the main content */
+main {
+  padding: 1rem;
+}
+
+h1 {
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Float profile image to the right */
+main img {
+  float: right;
+  width: 150px; 
+  height: auto;
+}
+
+/* Style the aside section */
+aside {
+  position: relative; 
+  width: 20rem;
+  margin: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+}
+
+aside h2 {
+  position: absolute; 
+  top: 10px; 
+  left: 10px; 
+  padding: 5px;
+  border-radius: 5px;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+/* Style the box class */
+.box {
+  margin: 1rem;
+  border: 1px solid rgba(0, 0, 0, .1);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
+}
+
+p {
+  padding: 0;
+}
+
+footer {
+  margin-top: 15px;
+  border-top: 1px solid #000;
+  text-align: center;
+}
+
+/* Additional styles for navigation links */
+nav a:hover {
+  color: #000; 
+  font-weight: bold;
+}
