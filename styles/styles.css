@@ -17,16 +17,23 @@ header {
     background-color: #333;
     color: #fff;
     padding: 1rem;
+    max-width: 840px;
+    margin: 0 auto;
 }
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: #fff;
+    display: block;
+    padding: 0.5rem;
     text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
 }
 
 /* Style the main content */
@@ -36,48 +43,57 @@ main {
 
 main img {
     float: right;
-    width: 150px;
+    width: 200px;
     height: auto;
 }
 
 h1 {
     color: #333;
+    border-bottom: 2px solid #000;
 }
 
 /* Class Selectors */
 .box {
-    margin: 1rem;
+    margin: .9rem;
     border: 1px solid rgba(0,0,0,.1);
-    padding: 1rem;
+    padding: 2.5rem;
     background-color: #ddd;
     color: #000;
 }
 
 /* Style the aside section */
 aside {
-  position: relative; /* Set position relative for absolute positioning of children */
-  width: 20rem;
-  margin: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 1rem;
-  background-color: #eee;
-  color: #333;
-  text-align: center;
+    width: 20rem;
+    position: relative;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
 }
 
 aside h2 {
-  position: absolute;
-  top: 10px; 
-  left: 10px; 
-  color: #fff; /* Change text color for readability */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  padding: 5px; /* Add some padding around the text */
-  border-radius: 5px; /* Optional: rounded corners for the background */
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 aside img {
-  width: 200px;
-  height: auto;
+    width: 250px;
+    height: auto;
 }
 
 /* Style the footer */
@@ -85,4 +101,23 @@ footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+/* Grid Layout for main and aside */
+.grid {
+    display: grid;
+    align-items: center;
+    max-width: 870px;
+    margin: 0 auto;
+}
+
+main {
+    grid-column: 2 / 3;
+}
+
+aside {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
