@@ -41,7 +41,12 @@ nav a {
 }
 
 /* Styles the main content */
+/* is this some kind of error*/
+/* why put grid on main????? */
+/* im turning it off for a reason */
 main {
+  /*  display: grid;
+    align-items: center; */
     padding: 1rem;
 }
 
@@ -114,8 +119,6 @@ footer {
 }
 
 main {
-    display: grid;
-    align-items: center;
     grid-column: 2 / 3;
 }
 
