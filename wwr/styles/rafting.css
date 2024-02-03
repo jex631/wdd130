@@ -27,19 +27,28 @@ body {
 
 /* Header styles */
 header {
-    background: var(--primary-color);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    background-color: #0077cc;
     color: white;
-    padding: 1rem 0;
-    text-align: center;
+    padding: 1rem;
 }
 
+/* Logo styles */
 header img {
-    max-width: 150px;
+    max-width: 50%;
+    height: auto;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 nav a {
     color: white;
-    margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
 }
@@ -52,25 +61,25 @@ main {
 /* Hero section styles */
 .hero {
     position: relative;
-    background-image: url('images/hero-image.jpg'); /* Make sure this path is correct */
+    background-image: url('images/hero-image.jpg'); 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 400px; /* Adjust this height as needed */
-    overflow: hidden; /* This ensures nothing spills outside the container */
+    height: 800px; 
+    overflow: hidden; 
 }
 
 .hero h1 {
     position: absolute;
-    top: 20%; /* Adjust these values as needed for your layout */
+    top: 20%; 
     left: 20%;
-    color: white; /* or any color that suits your design */
-    /* Additional styling for h1 */
+    color: white; 
+
 }
 
 .hero article {
     position: absolute;
-    top: 30%; /* Adjust as needed */
+    top: 30%; 
     left: 20%;
     background: rgba(255, 255, 255, 0.7);
     padding: 15px;
@@ -80,8 +89,8 @@ main {
 .hero article img {
     float: right;
     margin-left: 15px;
-    /* Additional styling for img */
 }
+
 /* Footer styles */
 footer {
     background: var(--footer-background);
@@ -117,3 +126,32 @@ footer nav img {
         margin: 5px 0;
     }
 }
+
+/* Grid layout for adventures images */
+.adventures-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Flexbox for individual adventure figures */
+.adventures figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.adventures figure img {
+    max-width: 100%;
+}
+
+.adventures figure figcaption {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
