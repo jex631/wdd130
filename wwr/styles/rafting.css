@@ -97,6 +97,22 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer nav.sociallinks {
+    display: flex;
+    align-items: center;
+}
+
+footer nav.sociallinks a {
+    margin-left: 10px;
 }
 
 footer nav a {
