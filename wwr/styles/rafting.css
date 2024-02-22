@@ -242,3 +242,123 @@ h1, h2 {
     border: none;
     cursor: pointer;
 }
+
+/* Trip Details Section */
+.trip-details {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.trip-details img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.trip-details h3 {
+    margin-top: 0;
+}
+
+.trip-details p {
+    margin-bottom: 10px;
+}
+
+/* Trip Details Section */
+.trip {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.trip img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.trip h3 {
+    margin-top: 0;
+}
+
+/* Trip Table Section */
+.trip-table {
+    margin-top: 50px;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th, .trip-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.trip-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.heading-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.full-width-image {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.full-width-image img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.full-width-image .heading-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 36px;
+}
+
+section.newsletter-signup {
+    padding: 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+section.call-to-action {
+    padding: 20px;
+    background-color: #152b55;
+    color: white;
+    text-align: center;
+}
+section.css-grid-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+section.css-grid-layout img {
+    max-width: 100%;
+    height: auto;
+}
+
+
